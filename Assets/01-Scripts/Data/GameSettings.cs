@@ -6,4 +6,5 @@ using UnityEngine;
 public class GameSettings : ScriptableObject
 {
     public float EndPhysicsMovementDuration;
+    public string sampleURI;
 }

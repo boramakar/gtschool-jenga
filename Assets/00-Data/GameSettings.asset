@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   EndPhysicsMovementDuration: 1
+  sampleURI: https://ga1vqcu3o1.execute-api.us-east-1.amazonaws.com/Assessment/stack
