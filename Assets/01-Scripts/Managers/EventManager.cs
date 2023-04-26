@@ -13,4 +13,18 @@ public static class EventManager
    {
       OnToggleInputEvent?.Invoke(isEnabled);
    }
+   
+   
+   public static Action OnStartPhysicsSimulation;
+   public static void StartPhysicsSimulation()
+   {
+      OnStartPhysicsSimulation?.Invoke();
+   }
+   
+   
+   public static Action OnEndPhysicsSimulation;
+   public static void EndPhysicsSimulation()
+   {
+      OnEndPhysicsSimulation?.Invoke();
+   }
 }

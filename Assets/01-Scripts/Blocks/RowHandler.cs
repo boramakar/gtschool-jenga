@@ -13,20 +13,20 @@ public class RowHandler : MonoBehaviour
         var blockOffset = GameManager.Instance.gameSettings.blockWidth;
         _block1 = Instantiate(GameManager.Instance.gameSettings.blockPrefabs[blockData1.mastery],
             transform.position + transform.right * -blockOffset, transform.rotation, transform).GetComponent<Block>();
-        _block1.SetData(blockData1);
+        _block1.Initialize(blockData1);
 
         if (blockData2 != null)
         {
             _block2 = Instantiate(GameManager.Instance.gameSettings.blockPrefabs[blockData2.Value.mastery],
                 transform.position, transform.rotation, transform).GetComponent<Block>();
-            _block2.SetData(blockData2.Value);
+            _block2.Initialize(blockData2.Value);
         }
 
         if (blockData3 != null)
         {
             _block3 = Instantiate(GameManager.Instance.gameSettings.blockPrefabs[blockData3.Value.mastery],
                 transform.position + transform.right * blockOffset, transform.rotation, transform).GetComponent<Block>();
-            _block3.SetData(blockData3.Value);
+            _block3.Initialize(blockData3.Value);
         }
     }
 

@@ -34,15 +34,6 @@ public class StackChangeButton : MonoBehaviour
     {
         if (!_canPress) return;
         EventManager.ToggleInputEvent(false);
-        ButtonPressEffect();
         EventManager.ChangeStackEvent(changeDirection);
-    }
-
-    private void ButtonPressEffect()
-    {
-        var gameSettings = GameManager.Instance.gameSettings;
-        var punchDuration = gameSettings.buttonPressAnimationDuration;
-        var punchScale = gameSettings.buttonPressAnimationScale;
-            transform.DOPunchScale(Vector3.one * punchScale, punchDuration);
     }
 }

@@ -14,20 +14,17 @@ public class Block : MonoBehaviour
     private BlockData _data;
     private bool _isGhost;
 
-    public void Initialize(Transform parent, Vector3 position, Vector3 rotation)
+    public void Initialize(BlockData data)
     {
         _gameManager = GameManager.Instance;
-        transform.parent = parent;
-        transform.position = position;
-        if (!TryGetComponent<Collider>(out _))
-        {
-            _isGhost = true;
-        }
-    }
-
-    public void SetData(BlockData data)
-    {
         _data = data;
+        _initialPosition = transform.localPosition;
+        _initialRotation = transform.localRotation.eulerAngles;
+        _isGhost = true;
+        if (TryGetComponent<Collider>(out _))
+        {
+            _isGhost = false;
+        }
     }
 
     public void StartPhysicsSimulation()
@@ -45,8 +42,8 @@ public class Block : MonoBehaviour
         else
         {
             rigidbody.isKinematic = true;
-            transform.DOMove(_initialPosition, _gameManager.gameSettings.EndPhysicsMovementDuration);
-            transform.DORotate(_initialRotation, _gameManager.gameSettings.EndPhysicsMovementDuration);
+            transform.DOLocalMove(_initialPosition, _gameManager.gameSettings.EndPhysicsMovementDuration);
+            transform.DOLocalRotate(_initialRotation, _gameManager.gameSettings.EndPhysicsMovementDuration);
         }
     }
 }

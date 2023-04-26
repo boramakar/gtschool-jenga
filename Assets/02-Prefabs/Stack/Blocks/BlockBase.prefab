@@ -172,7 +172,6 @@ GameObject:
   - component: {fileID: 6368368168552778669}
   - component: {fileID: 693418535018164588}
   - component: {fileID: 845065807114164006}
-  - component: {fileID: 4113948761112890949}
   m_Layer: 0
   m_Name: BlockModel
   m_TagString: Untagged
@@ -243,19 +242,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4113948761112890949
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5458059823661757423}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6630568554461190772
 GameObject:
   m_ObjectHideFlags: 0
