@@ -3,3 +3,9 @@
     LoginScene = 0,
     GameScene = 1
 }
+
+public enum StackChangeDirection
+{
+    Next,
+    Prev
+}

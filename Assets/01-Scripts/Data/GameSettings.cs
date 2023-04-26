@@ -11,7 +11,10 @@ public class GameSettings : ScriptableObject
     public GameObject rowPrefab;
     
     // Animation parameters
-    public float EndPhysicsMovementDuration;
+    public float EndPhysicsMovementDuration = 1f;
+    public float StackChangeDuration = 1.5f;
+    public float buttonPressAnimationDuration = 0.25f;
+    public float buttonPressAnimationScale = 0.8f;
     
     //Network Parameters
     public string sampleURI;

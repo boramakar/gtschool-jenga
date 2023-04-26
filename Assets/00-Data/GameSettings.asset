@@ -19,6 +19,9 @@ MonoBehaviour:
   stackPrefab: {fileID: 7054245712723701078, guid: 88a8012ed8da0ef448602e2898f68f98, type: 3}
   rowPrefab: {fileID: 4080302639910521667, guid: 56ca4f96916bea3458c394c505fc7064, type: 3}
   EndPhysicsMovementDuration: 1
+  StackChangeDuration: 1.5
+  buttonPressAnimationDuration: 0.25
+  buttonPressAnimationScale: -0.1
   sampleURI: https://ga1vqcu3o1.execute-api.us-east-1.amazonaws.com/Assessment/stack
   blockHeight: 1.5
   blockWidth: 2.5
