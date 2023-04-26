@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd97c719a0e372459f4a3692c9ec458, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
+  blockPrefabs:
+  - {fileID: 8941748401096127273, guid: ccebaa799805a3f498d12ceb2d0a436a, type: 3}
+  - {fileID: 4873727076617216328, guid: 99676227f00a49c46b9c1bacfacb6310, type: 3}
+  - {fileID: 4873727076617216328, guid: a6862e5217d243c4db0d04442ad0b3e0, type: 3}
+  stackPrefab: {fileID: 7054245712723701078, guid: 88a8012ed8da0ef448602e2898f68f98, type: 3}
+  rowPrefab: {fileID: 4080302639910521667, guid: 56ca4f96916bea3458c394c505fc7064, type: 3}
   EndPhysicsMovementDuration: 1
   sampleURI: https://ga1vqcu3o1.execute-api.us-east-1.amazonaws.com/Assessment/stack
+  blockHeight: 1.5
+  blockWidth: 2.5
+  blockLength: 7.5
+  stackOffset: 20

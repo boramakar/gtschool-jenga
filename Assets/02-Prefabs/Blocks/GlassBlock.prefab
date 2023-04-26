@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlassBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 811089993371564095, guid: 4a73fb219c3d3c948bf2d1bd405d230c, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 845065807114164006, guid: 4a73fb219c3d3c948bf2d1bd405d230c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -71,5 +75,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5713044477113646375, guid: 4a73fb219c3d3c948bf2d1bd405d230c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a73fb219c3d3c948bf2d1bd405d230c, type: 3}
