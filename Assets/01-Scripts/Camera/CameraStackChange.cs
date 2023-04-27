@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class CameraHandler : MonoBehaviour
+public class CameraStackChange : MonoBehaviour
 {
     private float _targetAngle;
 

@@ -60,7 +60,6 @@ public class StackManager : MonoBehaviour
         stackList = new List<StackHandler>();
 
         var stackPrefab = _gameManager.gameSettings.stackPrefab;
-        var stackOffset = _gameManager.gameSettings.stackOffset;
 
         foreach (var stackData in _gameManager.Stacks)
         {

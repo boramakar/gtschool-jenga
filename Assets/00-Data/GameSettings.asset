@@ -22,8 +22,10 @@ MonoBehaviour:
   StackChangeDuration: 1.5
   buttonPressAnimationDuration: 0.25
   buttonPressAnimationScale: -0.1
+  popupAnimationDuration: 0.25
   sampleURI: https://ga1vqcu3o1.execute-api.us-east-1.amazonaws.com/Assessment/stack
   blockHeight: 1.5
   blockWidth: 2.5
   blockLength: 7.5
   stackOffset: 20
+  descriptionSeparator: 

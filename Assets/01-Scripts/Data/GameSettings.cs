@@ -15,6 +15,7 @@ public class GameSettings : ScriptableObject
     public float StackChangeDuration = 1.5f;
     public float buttonPressAnimationDuration = 0.25f;
     public float buttonPressAnimationScale = 0.8f;
+    public float popupAnimationDuration = 0.25f;
     
     //Network Parameters
     public string sampleURI;
@@ -26,4 +27,7 @@ public class GameSettings : ScriptableObject
     
     // Stack parameters
     public float stackOffset = 20;
+    
+    // Extra
+    public char[] descriptionSeparator = {':'};
 }
