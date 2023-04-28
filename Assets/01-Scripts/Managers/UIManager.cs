@@ -27,7 +27,6 @@ public class UIManager : Singleton<UIManager>
 
     public void DisplayDescription(BlockData data)
     {
-        Debug.Log("UIManager.DisplayDescription");
         if(_popupStack.Count == 0)
             clickBlocker.SetActive(true);
         
