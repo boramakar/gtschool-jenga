@@ -7,12 +7,12 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private BlockType blockType;
     
     private GameManager _gameManager;
     private Vector3 _initialPosition;
     private Vector3 _initialRotation;
     private BlockData _data;
-    private bool _isGhost;
 
     public void Initialize(BlockData data)
     {
@@ -20,16 +20,11 @@ public class Block : MonoBehaviour
         _data = data;
         _initialPosition = transform.localPosition;
         _initialRotation = transform.localRotation.eulerAngles;
-        _isGhost = true;
-        if (TryGetComponent<Collider>(out _))
-        {
-            _isGhost = false;
-        }
     }
 
     public void StartPhysicsSimulation()
     {
-        if(_isGhost)
+        if(blockType == BlockType.Glass)
             gameObject.SetActive(false);
         else
             rigidbody.isKinematic = false;
@@ -37,13 +32,18 @@ public class Block : MonoBehaviour
 
     public void EndPhysicsSimulation()
     {
-        if(_isGhost)
-            gameObject.SetActive(true);
+        if(blockType == BlockType.Glass)
+            DOVirtual.DelayedCall(_gameManager.gameSettings.EndPhysicsMovementDuration, () => gameObject.SetActive(true));
         else
         {
             rigidbody.isKinematic = true;
             transform.DOLocalMove(_initialPosition, _gameManager.gameSettings.EndPhysicsMovementDuration);
             transform.DOLocalRotate(_initialRotation, _gameManager.gameSettings.EndPhysicsMovementDuration);
         }
+    }
+
+    public void DisplayDescription()
+    {
+        UIManager.Instance.DisplayDescription(_data);
     }
 }

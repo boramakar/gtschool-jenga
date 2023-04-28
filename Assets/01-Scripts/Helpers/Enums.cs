@@ -9,3 +9,10 @@ public enum StackChangeDirection
     Next,
     Prev
 }
+
+public enum BlockType
+{
+    Glass,
+    Wood,
+    Stone
+}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 811089993371564095}
   - component: {fileID: 5713044477113646375}
   - component: {fileID: 674213707014431637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlockBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 811089993371564095}
+  blockType: 0
 --- !u!1 &1996057921089776307
 GameObject:
   m_ObjectHideFlags: 0

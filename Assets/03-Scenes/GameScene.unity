@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 56929785}
   - component: {fileID: 56929784}
   m_Layer: 5
-  m_Name: OrbitalCameraCanvas
+  m_Name: MouseClickCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2394,7 +2394,7 @@ GameObject:
   - component: {fileID: 1991549540}
   - component: {fileID: 1991549542}
   m_Layer: 5
-  m_Name: OrbitalCameraActivator
+  m_Name: MouseClickHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2470,6 +2470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 56929786}
+  mainCamera: {fileID: 1758168433}
 --- !u!1 &2036209024
 GameObject:
   m_ObjectHideFlags: 0

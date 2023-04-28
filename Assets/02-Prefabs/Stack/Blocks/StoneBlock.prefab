@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 674213707014431637, guid: 4a73fb219c3d3c948bf2d1bd405d230c, type: 3}
+      propertyPath: blockType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 811089993371564095, guid: 4a73fb219c3d3c948bf2d1bd405d230c, type: 3}
       propertyPath: m_Mass
       value: 2
