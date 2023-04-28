@@ -28,6 +28,12 @@ public class GameSettings : ScriptableObject
     // Stack parameters
     public float stackOffset = 20;
     
+    // Camera Control Parameters
+    public float orbitalCameraXSpeed = 1;
+    public float orbitalCameraYSpeed = 1;
+    public float orbitalCameraZUpperLimit = 40;
+    public float orbitalCameraZLowerLimit = -20;
+    
     // Extra
-    public char[] descriptionSeparator = {':'};
+    public char descriptionSeparator;
 }

@@ -14,17 +14,27 @@ public static class EventManager
       OnToggleInputEvent?.Invoke(isEnabled);
    }
    
-   
    public static Action OnStartPhysicsSimulation;
    public static void StartPhysicsSimulation()
    {
       OnStartPhysicsSimulation?.Invoke();
    }
-   
-   
+
    public static Action OnEndPhysicsSimulation;
    public static void EndPhysicsSimulation()
    {
       OnEndPhysicsSimulation?.Invoke();
+   }
+
+   public static Action OnEnableOrbitalCamera;
+   public static void EnableOrbitalCamera()
+   {
+      OnEnableOrbitalCamera?.Invoke();
+   }
+
+   public static Action OnDisableOrbitalCamera;
+   public static void DisableOrbitalCamera()
+   {
+      OnDisableOrbitalCamera?.Invoke();
    }
 }

@@ -28,4 +28,8 @@ MonoBehaviour:
   blockWidth: 2.5
   blockLength: 7.5
   stackOffset: 20
-  descriptionSeparator: 
+  orbitalCameraXSpeed: 1
+  orbitalCameraYSpeed: 1
+  orbitalCameraZUpperLimit: 40
+  orbitalCameraZLowerLimit: -20
+  descriptionSeparator: 0

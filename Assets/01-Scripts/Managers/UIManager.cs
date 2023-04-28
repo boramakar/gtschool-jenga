@@ -30,7 +30,7 @@ public class UIManager : Singleton<UIManager>
         if(_popupStack.Count == 0)
             clickBlocker.SetActive(true);
         
-        var separator = GameManager.Instance.gameSettings.descriptionSeparator;
+        var separator = "" + GameManager.Instance.gameSettings.descriptionSeparator;
         var message = $"{data.grade}{separator}{data.domain}{separator}{data.cluster}{separator}{data.standardid}{separator}{data.standarddescription}";
         descriptionDisplay.ShowMessage(message);
         _popupStack.Push(descriptionDisplay);
